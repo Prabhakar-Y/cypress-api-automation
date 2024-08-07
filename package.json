@@ -1,0 +1,24 @@
+{
+  "name": "cypress_api_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "cypress run",
+    "test:allure": "cypress run --env allure=true",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report"
+  },
+  "keywords": [],
+  "author": "Prabhakar Y",
+  "license": "ISC",
+  "devDependencies": {
+    "@mmisty/cypress-allure-adapter": "^2.6.2",
+    "@types/node": "^22.1.0",
+    "cypress": "^13.13.2",
+    "typescript": "^5.5.4"
+  }
+}
